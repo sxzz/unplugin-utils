@@ -6,10 +6,42 @@ A set of utility functions commonly used by unplugins.
 
 Thanks to [@rollup/pluginutils](https://github.com/rollup/plugins/tree/master/packages/pluginutils). This projects is heavily copied from it.
 
+## Why Fork?
+
+- 🌍 Platform agnostic, supports running in the browser, Node.js...
+- ✂️ Subset, smaller bundle size.
+
 ## Install
 
 ```bash
 npm i unplugin-utils
+```
+
+## Usage
+
+### createFilter
+
+```ts
+export default function myPlugin(options = {}) {
+  const filter = createFilter(options.include, options.exclude)
+
+  return {
+    transform(code, id) {
+      if (!filter(id)) return
+
+      // proceed with the transformation...
+    },
+  }
+}
+```
+
+### normalizePath
+
+```ts
+import { normalizePath } from 'unplugin-utils'
+
+normalizePath(String.raw`foo\bar`) // 'foo/bar'
+normalizePath('foo/bar') // 'foo/bar'
 ```
 
 ## Sponsors
