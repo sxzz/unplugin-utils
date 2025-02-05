@@ -43,7 +43,7 @@ export type FilterPattern =
  * If `false`, then the patterns will not be resolved against any directory.
  * This can be useful if you want to create a filter for virtual module names.
  */
-export function createRollupFilter(
+export function createFilter(
   include?: FilterPattern,
   exclude?: FilterPattern,
   options?: { resolve?: string | false | null },
