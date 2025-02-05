@@ -4,7 +4,7 @@
 
 A set of utility functions commonly used by unplugins.
 
-This projects is heavily copied from [@rollup/pluginutils](https://github.com/rollup/plugins/tree/master/packages/pluginutils).
+Thanks to [@rollup/pluginutils](https://github.com/rollup/plugins/tree/master/packages/pluginutils). This projects is heavily copied from it.
 
 ## Install
 
@@ -23,3 +23,5 @@ npm i unplugin-utils
 ## License
 
 [MIT](./LICENSE) License © 2025 [三咲智子 Kevin Deng](https://github.com/sxzz)
+
+[MIT](./LICENSE) Copyright (c) 2019 RollupJS Plugin Contributors (https://github.com/rollup/plugins/graphs/contributors)
