@@ -1,7 +1,9 @@
-import { isAbsolute, posix, resolve } from 'pathe'
+import { isAbsolute, join, resolve } from 'pathe'
 import pm from 'picomatch'
 import { normalizePath } from './path'
 import { toArray } from './utils'
+
+const escapeMark = '[_#EsCaPe#_]'
 
 function getMatcherString(
   id: string,
@@ -14,12 +16,12 @@ function getMatcherString(
   // resolve('') is valid and will default to process.cwd()
   const basePath = normalizePath(resolve(resolutionBase || ''))
     // escape all possible (posix + win) path characters that might interfere with regex
-    .replaceAll(/[-^$*+?.()|[\]{}]/g, String.raw`\$&`)
+    .replaceAll(/[-^$*+?.()|[\]{}]/g, `${escapeMark}$&`)
   // Note that we use posix.join because:
   // 1. the basePath has been normalized to use /
   // 2. the incoming glob (id) matcher, also uses /
   // otherwise Node will force backslash (\) on windows
-  return posix.join(basePath, normalizePath(id))
+  return join(basePath, normalizePath(id)).replaceAll(escapeMark, '\\')
 }
 
 /**
