@@ -1,4 +1,4 @@
-# unplugin-utils [![npm](https://img.shields.io/npm/v/unplugin-utils.svg)](https://npmjs.com/package/unplugin-utils)
+# unplugin-utils [![npm](https://img.shields.io/npm/v/unplugin-utils.svg)](https://npmjs.com/package/unplugin-utils) [![codecov](https://codecov.io/gh/sxzz/unplugin-utils/graph/badge.svg?token=MHTCPNMZAK)](https://codecov.io/gh/sxzz/unplugin-utils)
 
 [![Unit Test](https://github.com/sxzz/unplugin-utils/actions/workflows/unit-test.yml/badge.svg)](https://github.com/sxzz/unplugin-utils/actions/workflows/unit-test.yml)
 
@@ -10,6 +10,7 @@ Thanks to [@rollup/pluginutils](https://github.com/rollup/plugins/tree/master/pa
 
 - 🌍 Platform agnostic, supports running in the browser, Node.js...
 - ✂️ Subset, smaller bundle size.
+- **💯 Coverage**: 100% test coverage.
 
 ## Install
 
