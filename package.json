@@ -1,6 +1,6 @@
 {
   "name": "unplugin-utils",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "packageManager": "pnpm@10.14.0",
   "description": "A set of utility functions commonly used by unplugins.",
   "type": "module",
