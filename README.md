@@ -1,6 +1,9 @@
-# unplugin-utils [![npm](https://img.shields.io/npm/v/unplugin-utils.svg)](https://npmjs.com/package/unplugin-utils) [![codecov](https://codecov.io/gh/sxzz/unplugin-utils/graph/badge.svg?token=MHTCPNMZAK)](https://codecov.io/gh/sxzz/unplugin-utils)
+# unplugin-utils
 
-[![Unit Test](https://github.com/sxzz/unplugin-utils/actions/workflows/unit-test.yml/badge.svg)](https://github.com/sxzz/unplugin-utils/actions/workflows/unit-test.yml)
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Unit Test][unit-test-src]][unit-test-href]
+[![codecov][codecov-src]][codecov-href]
 
 A set of utility functions commonly used by unplugins.
 
@@ -58,3 +61,14 @@ normalizePath('foo/bar') // 'foo/bar'
 [MIT](./LICENSE) License © 2025-PRESENT [Kevin Deng](https://github.com/sxzz)
 
 [MIT](./LICENSE) Copyright (c) 2019 RollupJS Plugin Contributors (https://github.com/rollup/plugins/graphs/contributors)
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/unplugin-utils.svg
+[npm-version-href]: https://npmjs.com/package/unplugin-utils
+[npm-downloads-src]: https://img.shields.io/npm/dm/unplugin-utils
+[npm-downloads-href]: https://www.npmcharts.com/compare/unplugin-utils?interval=30
+[unit-test-src]: https://github.com/sxzz/unplugin-utils/actions/workflows/unit-test.yml/badge.svg
+[unit-test-href]: https://github.com/sxzz/unplugin-utils/actions/workflows/unit-test.yml
+[codecov-src]: https://codecov.io/gh/sxzz/unplugin-utils/graph/badge.svg?token=VDWXCPSL1O
+[codecov-href]: https://codecov.io/gh/sxzz/unplugin-utils
