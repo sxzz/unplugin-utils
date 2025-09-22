@@ -1,7 +1,7 @@
 {
   "name": "unplugin-utils",
   "version": "0.3.0",
-  "packageManager": "pnpm@10.16.1",
+  "packageManager": "pnpm@10.17.0",
   "description": "A set of utility functions commonly used by unplugins.",
   "type": "module",
   "license": "MIT",
@@ -46,14 +46,14 @@
   "devDependencies": {
     "@sxzz/eslint-config": "^7.1.4",
     "@sxzz/prettier-config": "^2.2.4",
-    "@types/node": "^24.5.0",
+    "@types/node": "^24.5.2",
     "@types/picomatch": "^4.0.2",
     "@vitest/coverage-v8": "3.2.4",
     "bumpp": "^10.2.3",
-    "eslint": "^9.35.0",
-    "oxc-transform": "^0.89.0",
+    "eslint": "^9.36.0",
+    "oxc-transform": "^0.91.0",
     "prettier": "^3.6.2",
-    "tsdown": "^0.15.1",
+    "tsdown": "^0.15.4",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
