@@ -42,8 +42,16 @@ test('excludes non-string IDs', () => {
 })
 
 test('excludes strings beginning with NUL', () => {
-  const filter = createFilter(null, null)
-  expect(filter('\0someid')).toBe(false)
+  {
+    const filter = createFilter(null, null)
+    expect(filter('\0someid')).toBe(false)
+  }
+
+  {
+    const filter = createFilter('**/a.js')
+    expect(filter({})).toBe(false)
+    expect(filter('\0a.js')).toBe(false)
+  }
 })
 
 test('includes with regexp', () => {
