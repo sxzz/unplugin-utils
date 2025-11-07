@@ -152,7 +152,7 @@ test('add current working directory when pattern starts with one *', () => {
 
 test('normalizes path when pattern is an absolute path', () => {
   const filterPosix = createFilter([`${resolve('.')}/*`])
-  const filterWin = createFilter([`${resolve('.')}\\*`])
+  const filterWin = createFilter([String.raw`${resolve('.')}\*`])
 
   expect(filterPosix(resolve('a'))).toBe(true)
   expect(filterWin(resolve('a'))).toBe(true)
@@ -160,7 +160,7 @@ test('normalizes path when pattern is an absolute path', () => {
 
 test('normalizes path when pattern starts with *', () => {
   const filterPosix = createFilter([`**/a`])
-  const filterWin = createFilter([`**\\a`])
+  const filterWin = createFilter([String.raw`**\a`])
 
   expect(filterPosix(resolve('a'))).toBe(true)
   expect(filterWin(resolve('a'))).toBe(true)
@@ -170,7 +170,7 @@ test('normalizes path when pattern has resolution base', () => {
   const filterPosix = createFilter([`test/*`], [], {
     resolve: __dirname,
   })
-  const filterWin = createFilter([`test\\*`], [], {
+  const filterWin = createFilter([String.raw`test\*`], [], {
     resolve: __dirname,
   })
 
