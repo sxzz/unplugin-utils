@@ -1,32 +1,35 @@
 {
   "name": "unplugin-utils",
-  "version": "0.3.1",
-  "packageManager": "pnpm@10.23.0",
-  "description": "A set of utility functions commonly used by unplugins.",
   "type": "module",
+  "version": "0.3.1",
+  "packageManager": "pnpm@10.24.0",
+  "description": "A set of utility functions commonly used by unplugins.",
+  "author": "Kevin Deng <sxzz@sxzz.moe>",
   "license": "MIT",
+  "funding": "https://github.com/sponsors/sxzz",
   "homepage": "https://github.com/sxzz/unplugin-utils#readme",
-  "bugs": {
-    "url": "https://github.com/sxzz/unplugin-utils/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sxzz/unplugin-utils.git"
   },
-  "author": "Kevin Deng <sxzz@sxzz.moe>",
-  "funding": "https://github.com/sponsors/sxzz",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/sxzz/unplugin-utils/issues"
+  },
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
+  },
+  "engines": {
+    "node": ">=20.19.0"
   },
   "scripts": {
     "lint": "eslint --cache .",
@@ -34,7 +37,7 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "test": "vitest",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsgo --noEmit",
     "format": "prettier --cache --write .",
     "release": "bumpp",
     "prepublishOnly": "pnpm run build"
@@ -44,20 +47,18 @@
     "picomatch": "^4.0.3"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.3.2",
-    "@sxzz/prettier-config": "^2.2.5",
+    "@sxzz/eslint-config": "^7.4.1",
+    "@sxzz/prettier-config": "^2.2.6",
     "@types/node": "^24.10.1",
     "@types/picomatch": "^4.0.2",
-    "@vitest/coverage-v8": "4.0.13",
-    "bumpp": "^10.3.1",
+    "@typescript/native-preview": "7.0.0-dev.20251202.1",
+    "@vitest/coverage-v8": "4.0.15",
+    "bumpp": "^10.3.2",
     "eslint": "^9.39.1",
-    "prettier": "^3.6.2",
-    "tsdown": "^0.16.6",
+    "prettier": "^3.7.3",
+    "tsdown": "^0.17.0-beta.5",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.13"
-  },
-  "engines": {
-    "node": ">=20.19.0"
+    "vitest": "^4.0.15"
   },
   "prettier": "@sxzz/prettier-config",
   "tsdown": {
