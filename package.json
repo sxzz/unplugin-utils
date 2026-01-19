@@ -47,18 +47,18 @@
     "picomatch": "^4.0.3"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.4.4",
+    "@sxzz/eslint-config": "^7.4.5",
     "@sxzz/prettier-config": "^2.2.6",
-    "@types/node": "^25.0.6",
+    "@types/node": "^25.0.9",
     "@types/picomatch": "^4.0.2",
-    "@typescript/native-preview": "7.0.0-dev.20260111.1",
-    "@vitest/coverage-v8": "4.0.16",
-    "bumpp": "^10.3.2",
+    "@typescript/native-preview": "7.0.0-dev.20260118.1",
+    "@vitest/coverage-v8": "4.0.17",
+    "bumpp": "^10.4.0",
     "eslint": "^9.39.2",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.0",
     "tsdown": "^0.19.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.16"
+    "vitest": "^4.0.17"
   },
   "prettier": "@sxzz/prettier-config",
   "tsdown": {
