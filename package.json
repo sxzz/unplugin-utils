@@ -2,7 +2,7 @@
   "name": "unplugin-utils",
   "type": "module",
   "version": "0.3.2",
-  "packageManager": "pnpm@11.18.0",
+  "packageManager": "pnpm@11.21.0",
   "description": "A set of utility functions commonly used by unplugins.",
   "author": "Kevin Deng <sxzz@sxzz.moe>",
   "license": "MIT",
@@ -55,7 +55,7 @@
     "eslint": "^10.6.0",
     "prettier": "^3.9.3",
     "tsdown": "^0.22.3",
-    "tsdown-preset-sxzz": "^0.6.0",
+    "tsdown-preset-sxzz": "^0.7.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.9"
   },
