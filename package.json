@@ -21,6 +21,7 @@
   "bugs": {
     "url": "https://github.com/sxzz/unplugin-utils/issues"
   },
+  "sideEffects": false,
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json"
