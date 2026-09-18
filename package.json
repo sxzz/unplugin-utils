@@ -2,7 +2,13 @@
   "name": "unplugin-utils",
   "type": "module",
   "version": "0.3.2",
-  "packageManager": "pnpm@12.4.1",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.5.0",
+      "onFail": "download"
+    }
+  },
   "description": "A set of utility functions commonly used by unplugins.",
   "author": "Kevin Deng <sxzz@sxzz.moe>",
   "license": "MIT",
