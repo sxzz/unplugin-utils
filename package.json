@@ -57,7 +57,7 @@
     "@types/node": "^26.0.1",
     "@types/picomatch": "^4.0.3",
     "@typescript/native-preview": "7.0.0-dev.20260707.2",
-    "@vitest/coverage-v8": "5.0.1",
+    "@vitest/coverage-v8": "5.0.2",
     "bumpp": "^12.0.0",
     "eslint": "^10.6.0",
     "prettier": "^3.9.3",
